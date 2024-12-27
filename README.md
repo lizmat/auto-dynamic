@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/auto-dynamic/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/auto-dynamic/actions) [![Actions Status](https://github.com/lizmat/auto-dynamic/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/auto-dynamic/actions) [![Actions Status](https://github.com/lizmat/auto-dynamic/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/auto-dynamic/actions)
+
 NAME
 ====
 
