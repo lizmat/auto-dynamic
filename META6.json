@@ -1,0 +1,27 @@
+{
+  "auth": "zef:lizmat",
+  "authors": [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "automatically vivify dynamic variables",
+  "license": "Artistic-2.0",
+  "name": "auto-dynamic",
+  "perl": "6.d",
+  "provides": {
+    "auto-dynamic": "lib/auto-dynamic.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [
+    "NAUGHTY",
+    "DYNAMIC"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}

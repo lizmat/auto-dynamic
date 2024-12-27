@@ -1,0 +1,26 @@
+use Test;
+
+use auto-dynamic;
+
+plan 12;
+
+is-deeply $*IN, PROCESS::<$IN>, 'can we reference normal dynvars';
+
+is-deeply ($*foo = 42), 42, 'can we assign $*foo';
+is-deeply $*foo,        42, 'can we fetch $*foo';
+
+is-deeply $*bar,         Any, 'can we just mention $*bar';
+is-deeply ($*bar = 666), 666, 'can we later assign $*bar';
+is-deeply $*bar,         666, 'can we later fetch $*bar';
+
+is-deeply (%*hash<a> = 666), 666, 'can we autovi a hash and a key';
+is-deeply %*hash,       %(:666a), 'can we fetch the whole hash';
+
+is-deeply (@*array[2] = "ok"), "ok", 'can we autoviv an array and index';
+is-deeply  @*array,  [Any,Any,"ok"], 'can we fetch the whole hash';
+
+sub duh() { "duh" }
+is-deeply (&*handler = &duh), &duh, 'can we autoviv a code var';
+is-deeply &*handler(),       "duh", 'can we execute it';
+
+# vim: expandtab shiftwidth=4
